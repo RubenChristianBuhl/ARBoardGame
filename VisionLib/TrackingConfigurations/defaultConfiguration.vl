@@ -1,0 +1,31 @@
+{
+  "type": "VisionLibTrackerConfig",
+  "version": 1,
+  "meta": {
+    "name": "Default Meeple Tracker",
+    "description": "Default meeple tracking configuration file",
+    "author": "VisionLib"
+  },
+  "tracker": {
+    "type": "modelTracker",
+    "version": 1,
+    "parameters": {
+      "modelURI": "",
+      "useColor": true,
+      "metric": "cm",
+      "initPose": {
+       "type": "visionlib",
+       "t": [0.016842365264892579, 0.014721237123012543, 30.29071056842803957],
+       "q": [-0.2766152024269104, -0.3881957232952118, 0.8737488985061646, 0.09670034050941467]
+      },
+      "keyFrameDistance": 5,
+      "laplaceThreshold": 1,
+      "normalThreshold": 0.1,
+      "minInlierRatioInit": 0.7,
+      "minInlierRatioTracking": 0.6,
+      "extendibleTracking": false,
+      "lineSearchLengthInitRelative": 0.05,
+      "showLineModel": true
+    }
+  }
+}
